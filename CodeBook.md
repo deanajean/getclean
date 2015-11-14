@@ -24,7 +24,7 @@ A tidy data set - this is the output of step 4  with the average of each variabl
 
 .
 ###Cleaning of the data
-#reads in 3 test and training data sets (X test and train, y test and train, and Subject test and train)
+ reads in 3 test and training data sets (X test and train, y test and train, and Subject test and train)
  combines each test and training set
  uses features to assign names to X
  extracts the measurements for xyz std() and mean() using grep from 66 of 561 possilbe columsn
