@@ -25,21 +25,21 @@ A tidy data set - this is the output of step 4  with the average of each variabl
 .
 ###Cleaning of the data
 #reads in 3 test and training data sets (X test and train, y test and train, and Subject test and train)
-# combines each test and training set
-# uses features to assign names to X
-# extracts the measurements for xyz std() and mean() using grep from 66 of 561 possilbe columsn
-# removes the | and lower cases the colum names
-# gets the names of the activities from activity.txt
-# combines all three datasets (10299 rows    68 columns)
+ combines each test and training set
+ uses features to assign names to X
+ extracts the measurements for xyz std() and mean() using grep from 66 of 561 possilbe columsn
+ removes the | and lower cases the colum names
+ gets the names of the activities from activity.txt
+ combines all three datasets (10299 rows    68 columns)
 
 
 ###Guide to create the tidy data file
-#convert the data frame to a data table using data.table()
-#use lapply to do the mean of each column grouped by subject and activity
-#set the key to subject and activity to order the table
+convert the data frame to a data table using data.table()
+use lapply to do the mean of each column grouped by subject and activity
+set the key to subject and activity to order the table
 
 ##Description of the data
-#measurements are the mean() and std() of these features. These come from the accelerometer 
+measurements are the mean() and std() of these features. These come from the accelerometer 
 and gyroscope 3-axial raw signals tAcc-XYZ. These signals were used to estimate variables
 of the feature vector for each pattern:
 and tGyro-XYZ
@@ -64,7 +64,7 @@ fBodyGyroJerkMag
 
 
 ##Description of the variables in the tiny_data.txt file
-# for each of 30 subjects, there are 6 activities (180 rows). 68 variables.
+ for each of 30 subjects, there are 6 activities (180 rows). 68 variables.
   V1                V2
 1  1           walking
 2  2   walkingupstairs
